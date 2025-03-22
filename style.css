@@ -30,7 +30,7 @@ div.left {
 div.right {
   height: 100%;
   background-color: #aaa;
-  flex: 2 1 auto;
+  flex: 2 1 0;
 }
 
 a.credit {
@@ -64,4 +64,36 @@ span {
   margin: auto 0;
   padding: 0;
   line-height: 0;
+}
+
+fieldset {
+  position: relative;
+  border: 1px solid #000;
+  padding: 42px 48px 28px 36px;
+  /* border: none; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 12px 3rem;
+}
+
+legend {
+  position: absolute;
+  top: 18px;
+  left: 36px;
+}
+
+label {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 2px 4px;
+  margin: 0;
+  display: block;
+  width: 10rem;
 }
