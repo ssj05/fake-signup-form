@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 @font-face {
   font-family: Norse;
   src:
@@ -29,8 +34,12 @@ div.left {
 
 div.right {
   height: 100%;
-  background-color: #aaa;
+  background-color: #eee;
   flex: 2 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
 }
 
 a.credit {
@@ -60,17 +69,20 @@ div.logo {
   padding: 0;
 }
 
-span {
-  margin: auto 0;
+form {
+  /* margin: 48px 0 18px 0; */
   padding: 0;
-  line-height: 0;
+  background-color: #fff;
+  box-shadow: 2px 4px 10px 2px rgba(0, 0, 0, 0.2);
+  position: relative;
+  bottom: 32px;
 }
 
 fieldset {
   position: relative;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   padding: 42px 48px 28px 36px;
-  /* border: none; */
+  border: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -81,6 +93,7 @@ legend {
   position: absolute;
   top: 18px;
   left: 36px;
+  font-weight: 700;
 }
 
 label {
@@ -96,4 +109,48 @@ input {
   margin: 0;
   display: block;
   width: 10rem;
+}
+p.top,
+span.msg {
+  font-family: serif, sytstem-ui;
+  font-weight: 700;
+}
+p,
+span.msg,
+button {
+  margin-left: 36px;
+  margin-right: 200px;
+  display: block;
+}
+
+span.msg {
+  padding-bottom: 30px;
+}
+
+p.log-in a {
+  text-decoration: none;
+  color: #596d48;
+}
+
+p.log-in {
+  font-size: 12px;
+}
+
+button {
+  margin-top: -22px;
+  padding: 8px 24px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #596d48;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  border-color: #e5e7eb;
+}
+input:invalid {
+  border-color: #eaaf;
 }
